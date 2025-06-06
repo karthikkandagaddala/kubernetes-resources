@@ -2,11 +2,19 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: expense-2
+  name: test-cluster-3
   region: us-east-1
+  version: "1.28"
 
-managedNodegroups:
-  - name: expenses
-    instanceType: m5.large
-    desiredCapacity: 3
-    spot: true
+addons:
+  - name: eks-pod-identity-agent
+    version: v1.3.0
+  - name: vpc-cni
+    version: v1.18.2
+    useDefaultPodIdentityAssociations: true
+
+iam:
+  withOIDC: true
+
+secretsEncryption:
+  keyARN: arn:aws:kms:us-east-1:123456789:alias/test-kms
