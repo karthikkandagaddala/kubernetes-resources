@@ -1,14 +1,14 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: multi-containers
+  name: multi-containers #pod name
   labels:
     name: nginx-almalinux
     environment: Dev
 spec:
   containers:
-    - name: nginx
+    - name: nginx #container name-1
       image: nginx:latest
-    - name: almalinux
+    - name: almalinux #container name-2
       image: almalinux:9
       command: ["sleep", "2000"]
