@@ -1,7 +1,3 @@
-# kubernetes-resources
-
-learning Kubernetes resources
-
 kubernetes cluster configration:-
 
 EKSCTL ---Install
@@ -36,16 +32,13 @@ kubectl version --client
 ---
 
 Now eksctl and kubectl configuration done, so by using eksctl we need to create a cluster(EKS-service) in AWS.
--->By using "aws configure" goto I-AM users and check.
+-->By using "aws configure" goto I-AM users and check or U can add roles to ec2 instance
 -->IAM
 Users
 kubernetes-admin
 Create access key
-
-# -->AWS Access Key ID:
-
-# AWS Secret Access Key:
-
+-->AWS Access Key ID:
+AWS Secret Access Key:
 Default region name [None]: us-east-1
 Default output format [None]:
 -->website---https://eksctl.io/getting-started/
@@ -63,3 +56,5 @@ managedNodegroups:
   instanceType: m5.large
   desiredCapacity: 3
   spot: true
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Roles also we have to create manualy and cluster settings also check.
