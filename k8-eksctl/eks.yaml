@@ -11,4 +11,4 @@ managedNodeGroups:
     desiredCapacity: 3
     minSize: 1
     maxSize: 4
-    capacityType: SPOT
+    capacityType: spot
