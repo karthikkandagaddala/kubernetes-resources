@@ -2,11 +2,11 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: karthik-proj
+  name: expense-1
   region: us-east-1
 
 managedNodegroups:
-  - name: karthik-proj
+  - name: expense
     instanceType: m5.large
     desiredCapacity: 3
     spot: true
