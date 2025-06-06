@@ -2,10 +2,10 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-name: wonderful-lofi-walrus
-region: us-east-1
+  name: wonderful-lofi-walrus
+  region: us-east-1
 
-managedNodegroups:
+managedNodeGroups:
   - name: expense
     instanceType: m5.large
     desiredCapacity: 3
