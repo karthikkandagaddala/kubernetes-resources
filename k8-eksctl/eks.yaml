@@ -5,15 +5,14 @@ metadata:
   name: expense-1
   region: us-east-1
 
-addons:
-  - name: eks-pod-identity-agent
-    version: v1.3.0
-  - name: vpc-cni
-    version: v1.18.2
-    useDefaultPodIdentityAssociations: true
-
 iam:
   withOIDC: true
+
+addons:
+  - name: eks-pod-identity-agent
+  - name: vpc-cni
+    attachPolicyARNs:
+      - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
 
 managedNodegroups:
   - name: expense
