@@ -13,7 +13,7 @@ spec:
       image: tomcat:latest
     - name: almalinux
       image: amlalinux:9
-  ports:
-    - containerPort: 80
-    - containerPort: 8080
-  command: ["sleep", "2000"]
+      ports:
+        - containerPort: 80
+        - containerPort: 8080
+      command: ["sleep", "2000"]
