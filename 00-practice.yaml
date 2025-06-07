@@ -10,4 +10,4 @@ spec:
     - name: nginx
       image: nginx:9
       ports:
-        - containerPorts: 80
+        - containerPort: 80
