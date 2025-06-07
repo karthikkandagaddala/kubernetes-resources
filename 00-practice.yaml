@@ -2,7 +2,7 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: nginx-pod
-  labesl:
+  labels:
     name: nginx
     environment: Dev
 spec:
