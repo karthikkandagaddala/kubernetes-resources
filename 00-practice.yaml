@@ -1,10 +1,10 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
   name: multi-container-pod
   labels:
     name: multi-containers
-    environmet: Dev
+    environment: Dev
 spec:
   containers:
     - name: nginx
@@ -12,7 +12,7 @@ spec:
     - name: tomcat
       image: tomcat:latest
     - name: almalinux
-      image: amlalinux:9
+      image: almalinux:9
       ports:
         - containerPort: 80
         - containerPort: 8080
