@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labels-pod
+  labels:
+    name: labels
+    trainer: siva-kumar
+  annotations:
+    course: k8
+    git-link: "https://github.com/karthikkandagaddala/kubernetes-resources/"
+  spec:
+    containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+          - containerPort: 80

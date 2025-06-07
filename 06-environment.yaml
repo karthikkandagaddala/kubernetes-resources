@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env-test-pod
+spec:
+  containers:
+    - name: env-test
+      image: nginx:latest
+      env:
+        - name: course
+          value: "kubernetes"
+        - name: duration
+          value: "20-Hours"
+      ports:
+        - containerPort: 80
