@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: pod-config
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      envFrom:
+        - configMapRef:
+            name: config-map-pod #it will all data from configmap file, no need extra lines.
