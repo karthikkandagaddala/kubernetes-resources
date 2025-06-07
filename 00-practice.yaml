@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx-pod
+  labesl:
+    name: nginx
+    environment: Dev
+spec:
+  containers:
+    - name: nginx
+      image: nginx:9
+      port:
+        - containerPorts: 80
