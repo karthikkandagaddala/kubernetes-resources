@@ -1,19 +1,14 @@
-apiVersion: v1
 kind: Pod
+apiVersion: v1
 metadata:
-  name: multi-container-pod
+  name: nginx-Pod
   labels:
-    name: multi-containers
-    environment: Dev
-spec:
+    name: nginx
+    enviornment: Dev
+    createdBy: karthik
+Spec:
   containers:
     - name: nginx
       image: nginx:latest
     - name: tomcat
-      image: tomcat:latest
-    - name: almalinux
-      image: almalinux:9
-      ports:
-        - containerPort: 80
-        - containerPort: 8080
-      command: ["sleep", "2000"]
+      image: tomcat
