@@ -6,7 +6,7 @@ metadata:
     name: nginx
     enviornment: Dev
     createdBy: karthik
-Spec:
+spec:
   containers:
     - name: nginx
       image: nginx:latest
