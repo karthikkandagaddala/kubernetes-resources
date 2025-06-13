@@ -15,8 +15,8 @@ spec:
         requests:
           cpu: "100m"
           memory: "100Mi"
-        limit:
-          cpu: "100m"
-          memory: "100Mi"
+      limit:
+        cpu: "100m"
+        memory: "100Mi"
       ports:
         - containerPort: 80
