@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: nginx-Pod
+  name: nginx-pod
   labels:
     name: nginx
     enviornment: Dev
