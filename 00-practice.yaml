@@ -1,22 +1,13 @@
 kind: Pod
 apiVersion: v1
-metadata:
-  namespace: karthik
-  name: resource-pod
+meatadata:
+  name: nginx-pod
   labels:
-    name: resource-pod
-    environment: DEV
-    createdBy: karthik
+    name: frontend
+    project: expense
+    component: frontend
+    environment: Dev
 spec:
   containers:
-    - name: tomcat
-      image: tomcat:latest
-      resources:
-        requests:
-          cpu: "100m"
-          memory: "100Mi"
-        limits:
-          cpu: "100m"
-          memory: "100Mi"
-      ports:
-        - containerPort: 8080
+    - name: nginx
+      image: nginx:latest
