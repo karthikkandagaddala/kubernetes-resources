@@ -1,21 +1,21 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: resource-pod
+  name: resource-Pod
   labels:
-    name: resources
-    environment: PROD
-    createdBY: karthik
+    name: resource-Pod
+    environment: DEV
+    createdBy: karthik
 spec:
   containers:
     - name: tomcat
       image: tomcat:latest
-      resources:
-        requests:
-          cpu: "100m"
-          memory: "100Mi"
-        limits:
-          cpu: "100m"
-          memory: "100Mi"
+  resources:
+    request:
+      cpu: "100m"
+      memory: "100Mi"
+    limits:
+      cpu: "100m"
+      memory: "100Mi"
       ports:
-        - containerPort: 8080
+        containerPort: 8080
