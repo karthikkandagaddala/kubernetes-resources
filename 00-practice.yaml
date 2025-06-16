@@ -2,9 +2,9 @@ kind: Pod
 apiVersion: v1
 metadata:
   namespace: karthik
-  name: resource-Pod
+  name: resource-pod
   labels:
-    name: resource-Pod
+    name: resource-pod
     environment: DEV
     createdBy: karthik
 spec:
