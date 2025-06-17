@@ -8,7 +8,7 @@ spec:
   selector:
     name: tomcat
     environment: PROD
-    createdBy: karthik kandagaddala
+    createdBy: karthik-kandagaddala
     date: 17-june-2025
   ports:
     - protocol: TCP
