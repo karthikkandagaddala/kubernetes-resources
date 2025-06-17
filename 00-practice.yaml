@@ -1,11 +1,12 @@
 kind: Pod
 apiVersion: v1
 metadata:
+  namespace: karthik
   name: tomcat-pod
   labels:
     name: tomcat
     environment: PROD
-    createdBy: karthik kandagaddala
+    createdBy: karthik-kandagaddala
     date: 17-june-2025
 spec:
   containers:

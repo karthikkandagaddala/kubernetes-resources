@@ -1,6 +1,7 @@
 kind: service
 apiVersion: v1
 metadata:
+  namespace: karthik
   name: node-port-service
 spec:
   type: NodePort
