@@ -1,6 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
+  namespace: karthik
   name: nginx-pod
   labels:
     name: frontend
