@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  namespace: karthik
+  name: service-nginx
+spec:
+  selector:
+    name: nginx
+    environment: PROD
+    createdBy: karthik
+    dispatcher: frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

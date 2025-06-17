@@ -4,10 +4,10 @@ metadata:
   namespace: karthik
   name: nginx-pod
   labels:
-    name: frontend
-    project: expense
-    component: frontend
-    environment: Dev
+    name: nginx
+    environment: PROD
+    createdBy: karthik
+    dispatcher: frontend
 spec:
   containers:
     - name: nginx
