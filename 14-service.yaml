@@ -10,6 +10,6 @@ spec: #we are not giving any type means consider as cluster IP or service IP
     component: frontend
     environment: Dev
   ports:
-    - portocol: TCP
+    - protocol: TCP
       port: 80 #service-port
       targetPort: 80 #target-port
