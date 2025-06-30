@@ -2,16 +2,16 @@ kind: Service
 apiVersion: v1
 metadata:
   namespace: karthik
-  name: node-port-service
+  name: nodeport-service
 spec:
   type: NodePort
-  selector:
-    name: tomcat
-    environment: PROD
-    createdBy: karthik-kandagaddala
-    date: 17-june-2025
-  ports:
-    - protocol: TCP
-      targetPort: 8080
-      port: 8080
-      nodePort: 32763
+selector:
+  name: frontend
+  environment: PROD
+  createdBy: karthik
+  flag: practice
+ports:
+  - protocl: TCP
+    port: 80
+    targetPort: 80
+    nodePort: 32751

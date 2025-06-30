@@ -2,13 +2,13 @@ kind: Pod
 apiVersion: v1
 metadata:
   namespace: karthik
-  name: tomcat-pod
+  name: nginx-pod
   labels:
-    name: tomcat
+    name: frontend
     environment: PROD
-    createdBy: karthik-kandagaddala
-    date: 17-june-2025
+    createdBy: karthik
+    flag: practice
 spec:
   containers:
-    - name: tomcat
-      image: tomcat:latest
+    - name: nginx-containers
+      image: nginx-latest
