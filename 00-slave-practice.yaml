@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:space: TCL
+  name:space: tcl
   name: nginx-service
 spec:
   type: LoadBalancer
@@ -11,7 +11,7 @@ spec:
     environment: PROD
     createdBy: karthik
   ports:
-    protocol: TCP
-    targetPort: 80
-    port: 80
-    nodePort: 31655
+    - protocol: TCP
+      targetPort: 80
+      port: 80
+      nodePort: 31655
