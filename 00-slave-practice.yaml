@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name:space: tcl
+  namespace: tcl
   name: nginx-service
 spec:
   type: LoadBalancer
