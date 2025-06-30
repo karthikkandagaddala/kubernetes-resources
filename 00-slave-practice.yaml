@@ -10,8 +10,8 @@ spec:
     environment: PROD
     createdBy: karthik
     flag: practice
-ports:
-  - protocl: TCP
-    port: 80
-    targetPort: 80
-    nodePort: 32751
+  ports:
+    - protocl: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 32751
