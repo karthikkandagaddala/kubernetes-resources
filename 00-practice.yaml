@@ -10,5 +10,5 @@ metadata:
     flag: practice
 spec:
   containers:
-    - name: nginx-containers
+    - name: nginx
       image: nginx-latest
