@@ -5,11 +5,11 @@ metadata:
   name: nodeport-service
 spec:
   type: NodePort
-selector:
-  name: frontend
-  environment: PROD
-  createdBy: karthik
-  flag: practice
+  selector:
+    name: frontend
+    environment: PROD
+    createdBy: karthik
+    flag: practice
 ports:
   - protocl: TCP
     port: 80
