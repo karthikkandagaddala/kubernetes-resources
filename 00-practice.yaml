@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  namespace: TCL
+  namespace: tcl
   name: nginx-pod
   labels:
     name: nginx-pod-loadbalancer
