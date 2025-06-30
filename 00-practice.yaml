@@ -1,13 +1,12 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  namespace: karthik
   name: nginx-pod
   labels:
-    name: frontend
+    name: nginx-pod-loadbalancer
+    face: frontend
     environment: PROD
     createdBy: karthik
-    flag: practice
 spec:
   containers:
     - name: nginx

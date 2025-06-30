@@ -1,17 +1,16 @@
 kind: Service
 apiVersion: v1
 metadata:
-  namespace: karthik
-  name: nodeport-service
+  name: nginx-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
-    name: frontend
+    name: nginx-pod-loadbalancer
+    face: frontend
     environment: PROD
     createdBy: karthik
-    flag: practice
   ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 32751
+    protocol: TCP
+    targetPort: 80
+    port: 80
+    nodePort: 31655
