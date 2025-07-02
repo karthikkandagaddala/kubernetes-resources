@@ -9,7 +9,7 @@ metadata:
     environment: Dev
     face: frontend
 spec:
-  replicas: 3
+  replicas: 10
   selector:
     matchLabels:
       name: nginx-pod
@@ -25,5 +25,5 @@ spec:
         face: frontend
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: tomcat
+          image: tomcat:latest
