@@ -23,7 +23,7 @@ spec:
         project: TCL
         environment: Dev
         face: frontend
-  spec:
-    containers:
-      - name: nginx
-        imge: nginx:latest
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
