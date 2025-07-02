@@ -7,14 +7,14 @@ metadata:
     project: TCL
     environment: Dev
     face: frontend
-  spec:
-    replicas: 3
-    selector:
-      matchLabels:
-        name: nginx-pod
-        project: TCL
-        environment: Dev
-        face: frontend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: nginx-pod
+      project: TCL
+      environment: Dev
+      face: frontend
   template:
     metadata:
       labels:
