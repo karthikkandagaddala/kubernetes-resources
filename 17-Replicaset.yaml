@@ -25,5 +25,5 @@ spec:
         Project: TCL
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: tomcat
+          image: tomcat:latest
