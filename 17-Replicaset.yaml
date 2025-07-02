@@ -1,0 +1,29 @@
+kind: ReplicaSet
+apiVersion: apps/v1
+metadata:
+  namespace: karthik
+  name: replicas-pod-multi
+  # this labels belongs to replicaset resource
+  labels:
+    name: frontend
+    environment: Dev
+    Project: TCL
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchlabels:
+      name: frontend
+      environment: Dev
+      Project: TCL
+  # below is pod defination
+  template:
+    metadata:
+      labels:
+        name: frontend
+        environment: Dev
+        Project: TCL
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
