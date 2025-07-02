@@ -9,7 +9,7 @@ metadata:
     environment: Dev
     face: frontend
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
       name: nginx-pod
