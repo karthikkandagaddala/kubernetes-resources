@@ -1,14 +1,30 @@
-kind: Pod
-apiVersion: v1
+kind: Deployment
+apiVersion: apps/v1
 metadata:
-  namespace: tcl
-  name: nginx-pod
+  namespace: karthik
+  name: practice-deployment
   labels:
-    name: nginx-pod-loadbalancer
+    name: deployment-pod
     face: frontend
     environment: PROD
-    createdBy: karthik
+    nature: Normal
 spec:
-  containers:
-    - name: nginx
-      image: nginx:latest
+  replicas: 3
+  selector:
+    matchLabels:
+      name: deployment-pod
+      face: frontend
+      environment: PROD
+      nature: Normal
+  template:
+    metadata:
+      name: pods
+      labels:
+        name: deployment-pod
+        face: frontend
+        environment: PROD
+        nature: Normal
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
