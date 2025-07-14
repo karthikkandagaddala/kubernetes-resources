@@ -2,29 +2,29 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   namespace: karthik
-  name: practice-deployment
+  name: deployment-pods
   labels:
-    name: deployment-pod
-    face: frontend
+    name: deployment
     environment: PROD
-    nature: Normal
+    type: frontend
+    face: normal
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
-      name: deployment-pod
-      face: frontend
+      name: deployment
       environment: PROD
-      nature: Normal
+      type: frontend
+      face: normal
   template:
     metadata:
-      name: pods
+      name: deployment-pods
       labels:
-        name: deployment-pod
-        face: frontend
+        name: deployment
         environment: PROD
-        nature: Normal
+        type: frontend
+        face: normal
     spec:
       containers:
-        - name: nginx
-          image: nginx:latest
+        - name: tomcat
+          image: tomcat:latest
