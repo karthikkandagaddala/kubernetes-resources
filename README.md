@@ -58,3 +58,4 @@ managedNodegroups:
   spot: true
   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   Roles also we have to create manualy and cluster settings also check.
+  please follow all instructions to do kubernetes
